@@ -9,14 +9,20 @@ end
 
 def valid_move?(board, index)
   return false if !index.between(0,8)
-  return !(board[index] == "X" || board[index] == "O")
+  board[index] != "X" && board[index] != "O"
 end
 
 def move(board, index, char="X")
   board[index] = char
-  return board
+  board
 end
 
 def turn(board)
   puts "Please enter 1-9:"
+end
+
+
+
+def input_to_index(input)
+  input.to_i - 1
 end
