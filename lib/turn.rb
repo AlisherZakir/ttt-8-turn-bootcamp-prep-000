@@ -22,7 +22,8 @@ def turn(board)
   until index.between?(0,8)
   input = gets.strip
   index = input_to_index(input)
-end
+  end
+  move(board, index) if valid_move?(index)
 end
 
 
