@@ -8,7 +8,7 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  return false if !index.between(0,8)
+  return false if !index.between?(0,8)
   board[index] != "X" && board[index] != "O"
 end
 
