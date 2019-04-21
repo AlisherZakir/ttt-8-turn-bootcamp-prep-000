@@ -15,3 +15,6 @@ def move(board, index, char="X")
   board[index] = char
   return board
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
